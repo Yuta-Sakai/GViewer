@@ -18,5 +18,12 @@ namespace GViewer
         {
             InitializeComponent();
         }
+
+        internal void OnShowLocation()
+        {
+
+        }
+
+
     }
 }
