@@ -16,7 +16,7 @@
                HorizontalOptions="Center"
                VerticalOptions="Center" />
 
-        <Label x:Name="longitude"
+        <Label x:Name="longitudeLabel"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
 
