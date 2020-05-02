@@ -10,17 +10,18 @@
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="Center" />
 
         <Label x:Name="latitudeLabel"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+               VerticalOptions="Center" />
 
         <Label x:Name="longitude"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+               VerticalOptions="Center" />
 
         <Button x:Name="ShowLocationButton"
+                Text="Show Location"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Clicked="OnShowLocation" />

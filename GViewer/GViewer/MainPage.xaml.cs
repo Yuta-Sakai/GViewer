@@ -19,7 +19,7 @@ namespace GViewer
             InitializeComponent();
         }
 
-        internal void OnShowLocation(object sender, EventArgs e)
+        internal void OnShowLocation(object sender, EventArgs args)
         {
 
         }
