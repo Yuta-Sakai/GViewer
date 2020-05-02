@@ -14,16 +14,23 @@ namespace GViewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+
+        private ILocationGettable _locationGetter;
+
         public MainPage()
         {
             InitializeComponent();
+
+            this._locationGetter = DependencyService.Get<ILocationGettable>();
         }
 
         internal void OnShowLocation(object sender, EventArgs args)
         {
+            var location = this._locationGetter.GetLocation();
 
+            this.latitudeLabel.Text = location.Latitude.ToString();
+            this.longitudeLabel.Text = location.Longitude.ToString();
         }
-
 
     }
 }
