@@ -28,8 +28,8 @@ namespace GViewer
         {
             var location = this._locationGetter.GetLocation();
 
-            this.latitudeLabel.Text = location.Latitude.ToString();
-            this.longitudeLabel.Text = location.Longitude.ToString();
+            this.latitudeLabel.Text = $"緯度{location.Latitude:F2}";
+            this.longitudeLabel.Text =$"経度{location.Longitude:F2}";
         }
 
     }
